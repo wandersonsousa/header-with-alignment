@@ -46,11 +46,12 @@ var editor = EditorJS({
 
 All properties are optional.
 
-| Field        | Type       | Description                 |
-| ------------ | ---------- | --------------------------- |
-| placeholder  | `string`   | header's placeholder string |
-| levels       | `number[]` | enabled heading levels      |
-| defaultLevel | `number`   | default heading level       |
+| Field            | Type       | Description                 |
+| ---------------- | ---------- | --------------------------- |
+| placeholder      | `string`   | header's placeholder string |
+| levels           | `number[]` | enabled heading levels      |
+| defaultLevel     | `number`   | default heading level       |
+| defaultAlignment | `string`   | default alignment level     |
 
 ```javascript
 var editor = EditorJS({
@@ -72,12 +73,6 @@ var editor = EditorJS({
   ...
 });
 ```
-
-## Tool's settings
-
-![An image showing the header block tool](https://capella.pics/634ad545-08d7-4cb7-8409-f01289e0e5e1.jpg)
-
-You can select one of six levels for heading.
 
 ## Output data
 
