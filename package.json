@@ -1,5 +1,5 @@
 {
-  "name": "@editorjs/header",
+  "name": "editorjs-header-with-alignment",
   "version": "2.6.2",
   "keywords": [
     "codex editor",
@@ -10,7 +10,7 @@
   ],
   "description": "Header Tool for Editor.js",
   "license": "MIT",
-  "repository": "https://github.com/editor-js/header",
+  "repository": "wandersonsousa/header-with-alignment",
   "main": "./dist/bundle.js",
   "scripts": {
     "build": "webpack --mode production",
