@@ -11,31 +11,19 @@ Provides Headings Blocks for the [Editor.js](https://ifmo.su/editor).
 Get the package
 
 ```shell
-npm i --save @editorjs/header
+npm i --save editorjs-header-with-alignment
 ```
 
 Include module at your application
 
 ```javascript
-const Header = require('@editorjs/header');
+const Header = require("editorjs-header-with-alignment");
 ```
 
 ### Download to your project's source dir
 
 1. Upload folder `dist` from repository
 2. Add `dist/bundle.js` file to your page.
-
-### Load from CDN
-
-You can load specific version of package from [jsDelivr CDN](https://www.jsdelivr.com/package/npm/@editorjs/header).
-
-`https://cdn.jsdelivr.net/npm/@editorjs/header@latest`
-
-Then require this script on page with Editor.js.
-
-```html
-<script src="..."></script>
-```
 
 ## Usage
 
@@ -48,26 +36,6 @@ var editor = EditorJS({
   tools: {
     ...
     header: Header,
-  },
-
-  ...
-});
-```
-
-## Shortcut
-
-You can insert this Block by a useful shortcut. Set it up with the `tools[].shortcut` property of the Editor's initial config.
-
-```javascript
-var editor = EditorJS({
-  ...
-
-  tools: {
-    ...
-    header: {
-      class: Header,
-      shortcut: 'CMD+SHIFT+H',
-    },
   },
 
   ...
@@ -95,7 +63,8 @@ var editor = EditorJS({
       config: {
         placeholder: 'Enter a header',
         levels: [2, 3, 4],
-        defaultLevel: 3
+        defaultLevel: 3,
+        defaultAlignment: 'left'
       }
     }
   }
@@ -112,17 +81,19 @@ You can select one of six levels for heading.
 
 ## Output data
 
-| Field | Type     | Description                                      |
-| ----- | -------- | ------------------------------------------------ |
-| text  | `string` | header's text                                    |
-| level | `number` | level of header: 1 for H1, 2 for H2 ... 6 for H6 |
+| Field | Type     | Description                                          |
+| ----- | -------- | ---------------------------------------------------- |
+| text  | `string` | header's text                                        |
+| level | `number` | level of header: 1 for H1, 2 for H2 ... 6 for H6     |
+| align | `string` | heder alignment: 'left', 'center', 'justify', 'right |
 
 ```json
 {
   "type": "header",
   "data": {
     "text": "Why Telegram is the best messenger",
-    "level": 2
+    "level": 2,
+    "align": "left"
   }
 }
 ```
