@@ -8,7 +8,7 @@
     "editor.js",
     "editorjs"
   ],
-  "description": "Header Tool for Editor.js",
+  "description": "Header Tool With Alignment for Editor.js",
   "license": "MIT",
   "repository": "wandersonsousa/header-with-alignment",
   "main": "./dist/bundle.js",
